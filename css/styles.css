@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #1B1725;
+    color: white;
+}
+
+header h1, header h3 {
+    margin: 0;
+}
+
+header nav {
+    background-color: #7C728B;
+    margin-left: 80%
+}
+
+ul li {
+    display: inline;
+    color: white;
+    margin-left: 10%
+}
+
+ul>:first-child {
+    margin-left: 20%;
+}
+
+ul a {
+    text-decoration: none;
+}
