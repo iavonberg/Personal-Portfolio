@@ -5,27 +5,44 @@ body {
 header {
     background-color: #1B1725;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header h1, header h3 {
     margin: 0;
 }
 
+header  h1 {
+    width: 100%;
+}
+
+header h3 {
+    width: 80%;
+    padding-left: 5%;
+}
+
 header nav {
     background-color: #7C728B;
-    margin-left: 80%
+    width: 15%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 1%;
 }
 
 ul li {
-    display: inline;
     color: white;
-    margin-left: 10%
+    width: 20%;
+    list-style: none;
+    margin: 0;
 }
 
-ul>:first-child {
-    margin-left: 20%;
-}
-
-ul a {
+ul li a {
     text-decoration: none;
+    color: white;
+    margin: 0;
 }
