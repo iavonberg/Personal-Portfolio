@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iris Vonberg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Great+Vibes&family=Norican&family=Oswald:wght@400;500;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
@@ -31,39 +33,82 @@
         </div>
     </section>
     <section id='about'>
-        <img src='https://via.placeholder.com/400x400'>
+        <img src='/css/image17.png'>
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet. Dignissim enim sit amet venenatis urna cursus eget. Sit amet risus nullam eget felis eget. Vestibulum lorem sed risus ultricies.</p>
+        <p>I am currently a student in software engineering and web development. I've dabbled with webdev since I was 12 but never really tried to persue a career in it.<br><br>
+        I'm passionate about creating things that function flawlessly. I believe that true beauty comes from not only an appealing interface but also through a flawless experience. After all, a broken cup can be beautiful, but if it's broken it's not of much use.<br><br>
+        I'm interested in creating applications using python that better people's lives. I have a love for education and enrichment, animal welfare, and sexual health. I'd like to work in an organization that enables people to learn, animals to thrive, or people to take control of their sexual wellness without shame or embarassment.</p>
+
     </section>
     <section id='projects'>
-        <h2>Projects</h2>
-    <img src='https://via.placeholder.com/300x250'>
-    <img src='https://via.placeholder.com/300x250'>
-    <img src='https://via.placeholder.com/300x250'>
-    <img src='https://via.placeholder.com/700x500'>
+        <h2>Recent Projects</h2>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/warning.png" class="d-block w-100 top-50 end-50" data-bs-interval="5000" alt="...">
+                <div class="caption text-center">
+                    <h5>Project Under Construction</h5>
+                    <p>Details coming soon!</p>
+                    <p>Check out my <a href='http://github.com/iavonberg'>GitHub</a> in the meantime.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/warning-2.png" class="d-block w-100" data-bs-interval="5000" alt="...">
+                <div class="caption text-center">
+                    <h5>Project Under Construction</h5>
+                    <p>Details coming soon!</p>
+                    <p>Check out my <a href='http://github.com/iavonberg'>GitHub</a> in the meantime.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/warning.png" class="d-block w-100" data-bs-interval="5000" alt="...">
+                <div class="caption text-center">
+                    <h5>Project Under Construction</h5>
+                    <p>Details coming soon!</p>
+                    <p>Check out my <a href='http://github.com/iavonberg'>GitHub</a> in the meantime.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/warning-2.png" class="d-block w-100" data-bs-interval="5000" alt="...">
+                <div class="caption text-center">
+                    <h5>Project Under Construction</h5>
+                    <p>Details coming soon!</p>
+                    <p>Check out my <a href='http://github.com/iavonberg'>GitHub</a> in the meantime.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
     <section id='contact'>
         <h2>Contact</h2>
         <form action="#">
-            <label for="firstName">First Name</label>
+            <p><label for="firstName">First Name</label>
             <input type="text" required>
             <label for="lasttName">Last Name</label>
             <input type="text">
             <label for="email">Email Address</label>
-            <input type="email" required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <input type="email" required></p>
+            <p><label for="message">Message</label></p>
+            <textarea name="message" id="message" cols="112" rows="10"></textarea>
+            <p><button type="submit" class="button">Submit</button>
+            <button type="reset" class="button">Reset</button></p>
         </form>
     </section>
     <footer>
-        <div class='copyright'>Copyright info</div>
+        <div class='copyright'>©2023 Iris Vonberg<br>Built with HTML5 & CSS3</div>
         <div class='social'>
             <ul>
-                <li><img src=https://via.placeholder.com/40x40></li>
-                <li><img src=https://via.placeholder.com/40x40></li>
-                <li><img src=https://via.placeholder.com/40x40></li>
+                <li><a href='https://github.com/iavonberg'><img src='images/github.png'></a></li>
+                <li><a href='https://linkedn.com/ivonberg'><img src="images/linkedin (1).png"></a></li>
+                <li><img src='images/sharing.png'></li>
             </ul>
         </div>
     </footer>

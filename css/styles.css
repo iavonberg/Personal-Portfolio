@@ -11,20 +11,22 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-
+    z-index: 2;
 }
 
 header h1, header h3 {
-    margin: 0;
+    margin: 0px;
 }
 
 header  h1 {
     width: 100%;
     font-family: 'Fondamento', cursive;
+    margin-top: 5px;
+    margin-left: 8px;
 }
 
 header h3 {
-    width: 80%;
+    width: 69.4%;
     padding-left: 5%;
     font-family: 'Oxygen', sans-serif;
     font-size: 1em;
@@ -33,9 +35,9 @@ header h3 {
 
 header nav {
     background-color: #7C728B;
-    width: 15%;
+    width: 20%;
     margin-top: 30px;
-    padding: 5px 0px;
+    padding: 5px 35px;
 }
 
 a {
@@ -72,6 +74,7 @@ ul li a {
     flex-wrap: wrap;
     display: flex;
     margin: 60px 0;
+    margin-bottom: 0
 
 }
 
@@ -102,17 +105,33 @@ ul li a {
 }
 
 .button {
-    border: 1px solid black;
-    padding: 10px;
+    font-family: 'Fondamento', cursive;
+    background-image: linear-gradient(-180deg, #7c728b 0%, #a499b3 100%);
+    border-radius: .5rem;
+    color: #FFFFFF;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
     text-align: center;
-    border-radius: 5px;
-    background: white;
-}
+  }
 
 .button a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+.button a:hover {
+    color: #1b1725;
+}
+
+.button:hover {
+    background-image: linear-gradient(-180deg, #a499b3 0%, #7c728b 100%);
+    color: #1b1725;
+  }
 
 #spotlight .buttonWrapper {
     padding-left: 80%;
@@ -123,3 +142,123 @@ ul li a {
     margin-bottom: 7%;
 }
 
+#about {
+    background: #dcd7e2;
+    display: grid;
+    grid-template-areas: 'aboutImg aboutH2' 'aboutImg aboutP';
+    padding: 25px;
+}
+
+ #about h2, #projects h2, #contact h2 {
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: .15em;
+    font-weight: 700;
+    font-size: 2em
+}
+
+#about h2 {
+    margin-left: 40%;
+    height: 50px;
+    grid-area: aboutH2;
+}
+
+#about img {
+    grid-area: aboutImg;
+    height: 400px;
+    width: 400px;
+}
+
+#about p {
+    margin: 0px 20px;
+    margin-top: -175px;
+    grid-area: aboutP;
+}
+
+#projects, #contact {
+    margin-top: -5px;
+}
+
+#projects {
+    background: #a499b3;
+    padding: 25px 0px 50px;
+}
+
+#projects h2, #contact h2 {
+    text-align: center;
+
+}
+
+#projects h2 {
+    padding-bottom: 50px;
+}
+
+#contact {
+    background:#dcd7e2;
+    padding: 25px 0px;
+}
+
+#contact p, textarea {
+    margin-left: 10px;
+}
+
+#contact label {
+    padding: 0 5px;
+}
+
+#contact label:first-child {
+    margin-top: 25px;
+}
+
+#contact input {
+    padding-left: 10px;
+}
+
+button {
+    cursor: pointer;
+    margin: 0 10px;
+    height: 50px;
+    text-align: center;
+}
+
+footer {
+    background: #1B1725;
+    color: white;
+    font-size: .75em;
+    display: flex;
+    padding-top: 10px;
+}
+
+.copyright {
+    width: 90%;
+    align-self:center;
+}
+
+footer li {
+    display: inline;
+    padding: 0 5px;
+}
+
+footer img {
+    width: 25px;
+    align-self: center;
+}
+
+.carousel-inner {
+    padding-left: 175px;
+}
+
+.carousel-item img {
+    width: 50% !important;
+}
+
+
+.caption {
+    padding-right: 400px;
+    float: right;
+    margin-top: -700px;
+}
+
+.caption h5 {
+    font-family: 'Fondamento', cursive; 
+    font-size: 1.5em;
+}
