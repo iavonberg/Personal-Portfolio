@@ -42,14 +42,16 @@
     </section>
     <section id='projects'>
         <h2>Recent Projects</h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/images/warning.png" class="d-block w-100 top-50 end-50" data-bs-interval="5000" alt="...">
+                <img src="/images/portfolio.gif" class="d-block w-100 top-50 end-50" data-bs-interval="5000" alt="...">
                 <div class="caption text-center">
-                    <h5>Project Under Construction</h5>
-                    <p>Details coming soon!</p>
-                    <p>Check out my <a href='http://github.com/iavonberg'>GitHub</a> in the meantime.</p>
+                    <h5>Personal Portfolio</h5>
+                    <p>This page! I created this personal portfolio to showcase all the projects we're completing for school. There are 5 in total, and this website will be updated to reflect them.</p>
+                    <p>This website is all about me and my journey to becoming a software engineer and web developer. You can check out my github, head over to my linkedin, and even send me a message.</p>
+                    <p>Over time, this website will be refined and updated to include more robust features learned in class. Stay tuned for more awesome updates and creation.</p>
+                    <p>Want to see more? Check out my <a href='http://github.com/iavonberg'>GitHub</a>!</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -89,15 +91,18 @@
     </section>
     <section id='contact'>
         <h2>Contact</h2>
-        <form action="#">
-            <p><label for="firstName">First Name</label>
-            <input type="text" required>
-            <label for="lasttName">Last Name</label>
-            <input type="text">
-            <label for="email">Email Address</label>
-            <input type="email" required></p>
-            <p><label for="message">Message</label></p>
-            <textarea name="message" id="message" cols="112" rows="10"></textarea>
+        <form action="https://formspree.io/f/xqkopngk" method=POST>
+            <p><label for="firstName">First Name
+            <input type="text" name="firstName" required>
+            </label>
+            <label for="lasttName">Last Name
+            <input type="text" name="lastName">
+            </label>
+            <label for="email">Email Address
+            <input type="email" name='email' required></p>
+            </label>
+            <p><label for="message">Message</p>
+            <textarea name="message" id="message" cols="112" rows="10"></textarea></label>
             <p><button type="submit" class="button">Submit</button>
             <button type="reset" class="button">Reset</button></p>
         </form>

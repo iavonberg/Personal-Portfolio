@@ -249,10 +249,12 @@ footer img {
 
 .carousel-item img {
     width: 50% !important;
+    height: 700px;
 }
 
 
 .caption {
+    width: 50%;
     padding-right: 400px;
     float: right;
     margin-top: -700px;
